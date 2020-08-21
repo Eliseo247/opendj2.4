@@ -42,5 +42,6 @@ VOLUME ["/var/lib/ldap", "/etc/openldap"]
 
 # Expose default ports for ldap and ldaps
 EXPOSE 389 636
-
+USER root
+RUN chmod 777 /usr/local/bin/run-openldap.sh
 CMD ["/usr/local/bin/run-openldap.sh"]
