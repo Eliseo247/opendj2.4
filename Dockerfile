@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM registry.redhat.io/rhel7/rhel:latest
 
 # OpenLDAP server image for OpenShift Origin
 #
