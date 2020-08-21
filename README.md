@@ -14,10 +14,7 @@ CentOS7
 Installation
 To build an OpenLDAP image from scratch run:
 
-$ git clone https://github.com/openshift/openldap.git
-$ cd openldap
-$ make build
-Environment variables and volumes
+
 The image recognizes the following environment variables that you can set during initialization by passing -e VAR=VALUE to the Docker run command.
 
 Variable name	Description	Default
