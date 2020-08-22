@@ -42,7 +42,7 @@ RUN yum install -y openldap openldap-servers openldap-clients && \
 VOLUME ["/var/lib/ldap", "/etc/openldap"]
 
 # Expose default ports for ldap and ldaps
-EXPOSE 389 636
+EXPOSE 389 636 444
 USER root
 RUN chmod 777 /usr/local/bin/run-openldap.sh
 CMD ["/usr/local/bin/run-openldap.sh"]
