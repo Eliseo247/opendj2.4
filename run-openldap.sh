@@ -120,6 +120,7 @@ if [ ! -f /etc/openldap/CONFIGURED ]; then
     rm -rf /opt/openshift/*
 
     touch /etc/openldap/CONFIGURED
+    cp -Rf /etc/openldap/* /var/lib/ldap/backupbinarios-latest
 fi
 
 # Start the slapd service
